@@ -16,20 +16,24 @@
 <style>
   main {
     text-align: center;
-    /* display: flex; */
-    flex-direction: column;
+  }
+  main > div {
+    margin-bottom: 50px;
+  }
+  main > div > div {
+    display: flex;
+    margin-bottom: 8px;
     align-items: center;
     justify-content: center;
-  }
-  div {
-    margin-bottom: 50px;
   }
 </style>
 
 <main>
   {#each profiles as p, i}
     <div>
-      <CodeCard profile={p} />
+      <div>
+        <CodeCard profile={p} />
+      </div>
       <h1>{p.numLikes} likes</h1>
     </div>
   {/each}
