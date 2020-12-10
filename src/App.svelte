@@ -7,7 +7,7 @@
   let profiles: Profile[] = [];
 
   onMount(async () => {
-    const r = await fetch("http://localhost:3001/leaderboard");
+    const r = await fetch("https://api.vsinder.com/leaderboard");
     const data = await r.json();
     profiles = data.profiles;
   });
