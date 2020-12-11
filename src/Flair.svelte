@@ -11,4 +11,6 @@
   }
 </style>
 
-{#if flair in flairMap}<img src={flairMap[flair]} alt={flair} />{/if}
+{#if flair in flairMap}
+  <img src={`https://flair.benawad.com/` + flairMap[flair]} alt={flair} />
+{/if}
